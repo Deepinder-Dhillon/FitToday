@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Builder</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="main.css">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- JavaScript file -->
+    <script src="JavaScript.js" defer></script>
+</head>
+
+<body>
+    <div class="mainbdy">
+
+        <!-- Back Button -->
+        <div class="backbtn">
+            <button class="bck" onclick="back()">
+                <i class="fa fa-caret-left"></i>
+            </button>
+        </div>
+
+        <!-- Header -->
+        <header class="head">
+            <h1>FitToday</h1>
+            <p>Workouts Made Easy</p>
+        </header>
+
+        <!-- Login Greeting -->
+        <section class="login">
+            <h2>Hello<br> Sign in!</h2>
+        </section>
+
+        <!-- Sign-In Form -->
+        <div class="formbox">
+            <form name="signin" onsubmit="return Form()">
+
+                <div class="container">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter Username" name="uname" required>
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit" id="sign" value="Sign In">Sign in</button>
+                    <button type="button" class="frgt">Forgot Password</button>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+</body>
+
+</html>

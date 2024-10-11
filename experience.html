@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Builder</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="main.css">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="mainbdy">
+
+        <!-- Back Button -->
+        <div class="backbtn">
+            <button class="bck" onclick="back()">
+                <i class="fa fa-caret-left"></i>
+            </button>
+        </div>
+
+        <!-- Header Section -->
+        <header class="head">
+            <h1>FitToday</h1>
+            <p>Workouts Made Easy</p>
+        </header>
+
+        <!-- Question -->
+        <section class="login">
+            <h2>How experienced are you lifting weights?</h2>
+        </section>
+
+        <!-- Form for Selecting Experience Level -->
+        <section class="formbox">
+            <form id="liftingForm">
+                <!-- Beginner Option -->
+                <label class="lift">
+                    <input type="radio" name="liftingLevel" value="beginner" checked>
+                    <div class="lift-content">
+                        <h3>Beginner</h3>
+                        <p>Someone who’s been lifting for less than six months.</p>
+                    </div>
+                </label>
+
+                <!-- Intermediate Option -->
+                <label class="lift">
+                    <input type="radio" name="liftingLevel" value="intermediate">
+                    <div class="lift-content">
+                        <h3>Intermediate</h3>
+                        <p>Someone who’s been lifting for six months up to around two years.</p>
+                    </div>
+                </label>
+
+                <!-- Advanced Option -->
+                <label class="lift">
+                    <input type="radio" name="liftingLevel" value="advanced">
+                    <div class="lift-content">
+                        <h3>Advanced</h3>
+                        <p>Someone who’s been lifting for more than two years.</p>
+                    </div>
+                </label>
+            </form>
+        </section>
+
+        <!-- Continue Button -->
+        <div class="strtwork">
+            <button id="sign" onclick="experienceLvl()">Continue</button>
+        </div>
+
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="JavaScript.js"></script>
+</body>
+
+</html>

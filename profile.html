@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Builder</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="main.css">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="mainbdy">
+
+        <!-- Header Section -->
+        <header class="head">
+            <h1>Profile</h1>
+        </header>
+
+        <!-- Greeting Section -->
+        <section class="trgt">
+            <div class="trgticon"></div>
+            <h2>Good Morning!</h2>
+        </section>
+
+        <!-- Day 1 -->
+        <section class="day">
+            <h2>Day 1</h2>
+            <div class="daycontent">
+                <div class="type">Chest</div>
+                <div class="type">Triceps</div>
+                <div class="type" id="add">+</div>
+            </div>
+        </section>
+
+        <!-- Day 2 -->
+        <section class="day">
+            <h2>Day 2</h2>
+            <div class="daycontent">
+                <div class="type">Rest</div>
+                <div class="type" id="add">+</div>
+            </div>
+        </section>
+
+        <!-- Day 3 -->
+        <section class="day">
+            <h2>Day 3</h2>
+            <div class="daycontent">
+                <div class="type">Back</div>
+                <div class="type">Biceps</div>
+                <div class="type" id="add">+</div>
+            </div>
+        </section>
+
+        <!-- Last 7 Days -->
+        <section class="day1">
+            <h2>Last 7 days</h2>
+            <div class="daycontent">
+                3 Workouts
+            </div>
+        </section>
+
+        <!-- Workout History -->
+        <section style="margin-top: 20px;">
+            <div class="history">
+                <h3>Monday</h3>
+                <p>Legs</p>
+            </div>
+            <div class="history">
+                <h3>Tuesday</h3>
+                <p>Rest</p>
+            </div>
+            <div class="history">
+                <h3>Wednesday</h3>
+                <p>Back</p>
+            </div>
+            <div class="history">
+                <h3>Thursday</h3>
+                <p>Lower Body</p>
+            </div>
+        </section>
+
+        <!-- Footer Navigation -->
+        <footer class="footer">
+            <div class="box">
+                <button class="profile" style="background-color: white; color: black;" onclick="profile()">Profile</button>
+            </div>
+            <div class="box">
+                <button class="workout" onclick="back1()">Workout</button>
+            </div>
+            <div class="box">
+                <button class="excercise" onclick="exercise()">Exercise</button>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- JavaScript file -->
+    <script src="JavaScript.js"></script>
+</body>
+
+</html>

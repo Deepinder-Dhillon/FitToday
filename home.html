@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Builder</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="main.css">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="mainbdy">
+
+        <!-- Back Button -->
+        <div class="backbtn">
+            <button class="bck" onclick="str()">
+                <i class="fa fa-caret-left"></i>
+            </button>
+        </div>
+
+        <!-- Header Section -->
+        <header class="head">
+            <h1>Target Muscles</h1>
+        </header>
+
+        <!-- Add Exercise Button -->
+        <div class="ttl">
+            <div class="add" id="add">
+                <button id="adex" onclick="createPopout()" class="addbtn">+</button>
+            </div>
+        </div>
+
+        <!-- Target Muscles Section -->
+        <div class="targetMuscles">
+            <div class="trgt">
+                <div class="trgticon" id="chesttgt"></div>
+                <div class="trttxt">Chest</div>
+
+                <div class="trgticon" id="triceptgt"></div>
+                <div class="trttxt">Triceps</div>
+
+                <div class="add">
+                    <button id="adexercise" class="addbtn">+</button>
+                </div>
+            </div>
+
+            <!-- Equipment Filter Dropdown -->
+            <select class="dropdown" id="equipment" onchange="equipFilter()">
+                <option value="all">All</option>
+                <option value="Weights">Weights</option>
+                <option value="Bodyweight">Bodyweight Exercises</option>
+            </select>
+
+            <!-- Duration Dropdown -->
+            <select class="dropdown" id="hourCountDropdown" onchange="hourCount()">
+                <option value="6">1 Hour</option>
+                <option value="8">1.5 Hours</option>
+                <option value="10">2 Hours</option>
+            </select>
+        </div>
+
+        <br>
+
+        <!-- Exercises Container -->
+        <div class="formbox1">
+            <div class="exercises" id="exerciseContainer"></div>
+
+            <!-- Start Workout Button -->
+            <div class="strtwork">
+                <button class="startworkoutbtn" id="sign" onclick="strtworkout()">Start Workout</button>
+            </div>
+
+            <!-- Footer Navigation -->
+            <footer class="footer">
+                <div class="box">
+                    <button class="profile" onclick="profile()">Profile</button>
+                </div>
+                <div class="box">
+                    <button class="workout" style="background-color: white; color: black;">Workout</button>
+                </div>
+                <div class="box">
+                    <button class="excercise" onclick="exercise()">Exercise</button>
+                </div>
+            </footer>
+        </div>
+
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="JavaScript.js"></script>
+</body>
+
+</html>
