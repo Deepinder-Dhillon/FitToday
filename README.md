@@ -1,7 +1,7 @@
 # FitToday
-Workout Made Easier
+Workouts Made Easier
 
-**FitToday** is a workout builder app that simplifies creating and customizing fitness routines. Whether you're targeting specific muscle groups or tailoring your workout to the available equipment, FitToday helps you plan efficient workouts with ease. The app includes options for filtering exercises by muscle group, selecting workout duration, and starting your session with a single click.
+**FitToday** is a concept workout builder app designed to simplify the creation and customization of fitness routines. Whether you're targeting specific muscle groups or tailoring your workout based on available equipment, FitToday offers an intuitive way to plan efficient workouts. The app concept includes features like filtering exercises by muscle group, selecting workout durations, and seamlessly starting your session with a single click.
 
 ## Table of Contents
 - [Screenshots](#screenshots)
